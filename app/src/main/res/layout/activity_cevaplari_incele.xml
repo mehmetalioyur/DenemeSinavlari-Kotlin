@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".CevaplariInceleActivity">
+
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/cevaplari_incele_soru_numarasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Soru Numarasi"
+                android:textColor="#C8BA0746"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20sp"></TextView>
+
+            <TextView
+                android:id="@+id/cevaplari_incele_soru_adi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:text="Soru Adı Buraya Yazılacak"
+
+                android:textColor="@color/black"
+                android:textSize="17sp"></TextView>
+
+            <ImageView
+                android:id="@+id/cevaplari_incele_soru_fotografi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitStart"
+                android:adjustViewBounds="true"></ImageView>
+
+
+                <TextView
+                    android:id="@+id/cevaplari_incele_a_sikki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:checked="false"
+                    android:text="A Şıkkı Buraya Girilecek"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:layout_margin="8dp"></TextView>
+
+
+                <TextView
+                    android:padding="8dp"
+                    android:id="@+id/cevaplari_incele_b_sikki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="B Şıkkı Buraya Girilecek"
+                    android:layout_margin="8dp"
+
+                    android:textSize="15sp"></TextView>
+
+                <TextView
+                    android:padding="8dp"
+                    android:id="@+id/cevaplari_incele_c_sikki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="C Şıkkı Buraya Girilecek"
+                    android:layout_margin="8dp"
+                    android:textSize="15sp"></TextView>
+
+                <TextView
+                    android:padding="8dp"
+                    android:id="@+id/cevaplari_incele_d_sikki"
+                    android:layout_margin="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="D Şıkkı Buraya Girilecek"
+                    android:textSize="15sp"></TextView>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/cevaplari_incele_geri_button"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/previous_button_shape"
+            android:onClick="cevaplariInceleGeriButton"
+            android:layout_weight="5"></Button>
+
+        >
+
+        <Button
+            android:onClick="cevaplariInceleBitirButton"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:background="@drawable/finish_button_shape"
+            android:text="İncelemeyi Bitir"
+            android:textColor="#FFFFFF"
+            android:layout_margin="5dp"
+            android:layout_weight="5"
+            ></Button>
+
+        <Button
+            android:id="@+id/cevaplari_incele_ileri_button"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_weight="5"
+            android:background="@drawable/next_button_shape"
+            android:onClick="cevaplariInceleIleriButton"></Button>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

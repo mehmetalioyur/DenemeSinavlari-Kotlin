@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/sonuc_cerceve">
+        <TextView
+            android:id="@+id/sira_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="NO">
+
+        </TextView>
+        <TextView
+            android:id="@+id/sira_isim"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:text="İsim Soyisim"></TextView>
+        <TextView
+            android:id="@+id/sira_net"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:text="Net"></TextView>
+
+
+    </LinearLayout>
+
+</LinearLayout>
