@@ -20,13 +20,10 @@ private lateinit var username : String
         //sharedPreferences'ta kullanıcı adı varsa DersSecimiActivitye git. username i al. Bu aktiviteyi bitir.
         val sharedPreferences = this.getSharedPreferences("com.mehmetalioyur.denemesnavlar", Context.MODE_PRIVATE)
         username = sharedPreferences.getString("username", "").toString()
-        println(username)
+
 
         if (username != "") {
             val intent = Intent(this, DersSecimiActivity::class.java)
-
-         //   intent.putExtra("username",username)
-
             startActivity(intent)
             finish()
 
@@ -46,11 +43,8 @@ private lateinit var username : String
             Toast.makeText(this,"Lütfen İsminizi Giriniz.",Toast.LENGTH_LONG).show()
         // dolu ise DersSecimiActivitye git. username i al. Bu aktiviteyi bitir.
         }else{
-           // val intent = Intent(this, DersSecimiActivity::class.java)
-            intent.putExtra("username",username)
-
+            val intent = Intent(this, DersSecimiActivity::class.java)
             startActivity(intent)
-
             finish()
         }
     }
