@@ -38,13 +38,13 @@ class QuestionsActivity : AppCompatActivity() {
     private var secim: Int = 5
 
     var denemeAdi: String? = null
-    var username : String? = null
+   // var username : String? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_questions)
 
         denemeAdi = intent.getStringExtra("denemeAdi")
-        username = intent.getStringExtra("username")
+     //   username = intent.getStringExtra("username")
         verileriAl()
 
         // Beklemeden soruları göstermeye çalıştığımda uygulama çöküyor. 4 Saniye uygun. Fotoğrafları da onCreatede çekebilirim. Araştır !!
@@ -269,7 +269,7 @@ class QuestionsActivity : AppCompatActivity() {
         intentsonuclarActivity.putIntegerArrayListExtra("yollananKullaniciCevabi", secimArrayList)
         intentsonuclarActivity.putIntegerArrayListExtra ("dogruCevaplar", dogruCevabiCek)
         intentsonuclarActivity.putExtra("denemeAdi",denemeAdi)
-        intentsonuclarActivity.putExtra("username",username)
+     //   intentsonuclarActivity.putExtra("username",username)
         intentsonuclarActivity.putStringArrayListExtra("soruAdi",soruAdiCek)
         intentsonuclarActivity.putStringArrayListExtra("aSikki",aSikkiCek)
         intentsonuclarActivity.putStringArrayListExtra("bSikki",bSikkiCek)

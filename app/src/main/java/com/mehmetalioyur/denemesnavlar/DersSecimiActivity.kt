@@ -11,7 +11,7 @@ class DersSecimiActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ders_secimi)
-        val username = intent.getStringExtra("username").toString()  //username i al
+       // val username = intent.getStringExtra("username").toString()  //username i al
 
         val dersListesi = ArrayList<String>()   // ders isimlerini oluştur.
         dersListesi.add("Türkçe")
@@ -27,7 +27,7 @@ class DersSecimiActivity : AppCompatActivity() {
         ders_listesi_list.onItemClickListener = AdapterView.OnItemClickListener { parent , view, position, id ->
             val intent = Intent(applicationContext,DenemelerListesiActivity::class.java)
             intent.putExtra("dersAdi",dersListesi[position])
-            intent.putExtra("username",username)
+         //   intent.putExtra("username",username)
             startActivity(intent)
 
         }

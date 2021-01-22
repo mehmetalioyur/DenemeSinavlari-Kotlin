@@ -1,5 +1,6 @@
 package com.mehmetalioyur.denemesnavlar
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -43,9 +44,10 @@ class SonuclarActivity : AppCompatActivity() {
         dSikki = intent.getStringArrayListExtra("dSikki") as ArrayList<String>
         fotograf = intent.getStringArrayListExtra("fotograf") as ArrayList<String>
 
+        val sharedPreferences = this.getSharedPreferences("com.mehmetalioyur.denemesnavlar", Context.MODE_PRIVATE)
+        isimText = sharedPreferences.getString("username", "").toString()
 
-
-        isimText = intent.getStringExtra("username")!!
+    //     isimText = intent.getStringExtra("username")!!
         kullaniciCevabi = intent.getIntegerArrayListExtra("yollananKullaniciCevabi")!!
         this.dogruCevap = intent.getIntegerArrayListExtra("dogruCevaplar")!!
         denemeAdi = intent.getStringExtra("denemeAdi").toString()

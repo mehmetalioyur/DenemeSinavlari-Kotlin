@@ -25,7 +25,7 @@ private lateinit var username : String
         if (username != "") {
             val intent = Intent(this, DersSecimiActivity::class.java)
 
-            intent.putExtra("username",username)
+         //   intent.putExtra("username",username)
 
             startActivity(intent)
             finish()
@@ -46,7 +46,7 @@ private lateinit var username : String
             Toast.makeText(this,"Lütfen İsminizi Giriniz.",Toast.LENGTH_LONG).show()
         // dolu ise DersSecimiActivitye git. username i al. Bu aktiviteyi bitir.
         }else{
-            val intent = Intent(this, DersSecimiActivity::class.java)
+           // val intent = Intent(this, DersSecimiActivity::class.java)
             intent.putExtra("username",username)
 
             startActivity(intent)

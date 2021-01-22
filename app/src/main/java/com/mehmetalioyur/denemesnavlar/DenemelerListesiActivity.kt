@@ -15,7 +15,7 @@ class DenemelerListesiActivity : AppCompatActivity() {
         setContentView(R.layout.activity_denemeler_listesi)
 
 
-        val username = intent.getStringExtra("username")
+     //   val username = intent.getStringExtra("username")
         val dersAdi = intent.getStringExtra("dersAdi")
 
         // ders adına göre buradaki list viewda gösterilecek öğeler. Bunu firebasedan otomatik ekleyebirim. Araştır!!
@@ -50,7 +50,7 @@ class DenemelerListesiActivity : AppCompatActivity() {
         deneme_secimi_listView.onItemClickListener = AdapterView.OnItemClickListener { parent, view, position, id ->
             val intent = Intent(applicationContext,QuestionsActivity::class.java)
             intent.putExtra("denemeAdi",denemeListesi[position])
-            intent.putExtra("username",username)
+          //  intent.putExtra("username",username)
             startActivity(intent)
             finish()
         }
