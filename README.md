@@ -1,4 +1,4 @@
-# DenemeSinavlari-Kotlin
+# Deneme Sınavları - Kotlin
 
 Bu projemde örnek bir json veri seti üzerinden deneme sınavları klonu geliştirdim. </br></br>
 Bu uygulama ile deneme sınavları çözülebilir, sınav bittikten sonra cevaplar incelenebilir ve
